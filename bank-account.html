@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>The Bank</title>
+  </head>
+  <body>
+    <div class='container'>
+      <h1>The Bank</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form id="new-account">
+            <h3>New Account</h3>
+            <div class='form-group'>
+              <label for="new-name">Enter name:</label>
+              <input type="text" id="new-name" class='form-control'>
+            </div>
+            <div class='form-group'>
+              <label for="new-deposit">Deposit amount:</label>
+              <input type="text" id="new-deposit" class='form-control'>
+            </div>
+
+              <button type='submit' class='btn btn-warning'>Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form id="deposit-withdraw">
+            <h3>Deposit or Withdraw $$$</h3>
+            <div class='form-group'>
+              <label for="deposit">Deposit amount:</label>
+              <input type="number" id="deposit" class='form-control' >
+            </div>
+            <div class='form-group'>
+              <label for="withdraw">Withdraw amount:</label>
+              <input type="number" id="withdraw" class='form-control' >
+            </div>
+
+            <button type='submit' class='btn btn-warning' >Submit</button>
+          </form>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="show-balance">
+          <h3><span class="accountName"></span>'s balance: </h3>
+          <span class="balance"></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
